@@ -7,8 +7,7 @@
         "**/node_modules/**": true,
         "**/yotta_modules/**": true,
         "**/yotta_targets": true,
-        "**/pxt_modules/**": true,
-        "**/.pxt/**": true
+        "**/pxt_modules/**": true
     },
     "files.associations": {
         "*.blocks": "html",
@@ -19,11 +18,33 @@
         "**/node_modules": true,
         "**/yotta_modules": true,
         "**/yotta_targets": true,
-        "**/pxt_modules": true,
-        "**/.pxt": true
+        "**/pxt_modules": true
     },
+    "MicroPython.executeButton": [
+        {
+            "text": "▶",
+            "tooltip": "运行",
+            "alignment": "left",
+            "command": "extension.executeFile",
+            "priority": 3.5
+        }
+    ],
+    "MicroPython.syncButton": [
+        {
+            "text": "$(sync)",
+            "tooltip": "同步",
+            "alignment": "left",
+            "command": "extension.execute",
+            "priority": 4
+        }
+    ],
     "files.exclude": {
-        "**/pxt_modules": true,
-        "**/.pxt": true
-    }
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true
+    },
+    "hide-files.files": []
 }
